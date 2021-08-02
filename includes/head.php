@@ -40,6 +40,7 @@ if (isset($_POST['void_action'])) {
     <title><?php Contents::title($this); ?><?php if ($this->is('index')): ?><?php if (!empty($setting['subtitle'])): ?><?php echo ' - '.$setting['subtitle']; ?><?php endif; ?><?php endif; ?></title>
     <meta name="author" content="<?php $this->author(); ?>" />
     <meta name="description" content="<?php if($description != '') echo $description; else $this->excerpt(50); ?>" />
+    <?php $this->header('commentReply=&description=&wlw=&xmlrpc=&rss2=&atom=&rss1=&template=&pingback=&generator'); ?>
     <?php if($this->is('post') || $this->is('page')) {?>
     <meta property="og:title" content="<?php Contents::title($this); ?>" />
     <meta property="og:description" content="<?php if($description != '') echo $description; else $this->excerpt(50); ?>" />
@@ -55,7 +56,6 @@ if (isset($_POST['void_action'])) {
     <meta name="twitter:image" content="<?php echo $banner; ?>" /> <?php }
     else {?>
     <?php } ?>
-    <?php $this->header('commentReply=&description=&'); ?>
 
     <!--canonical-->
     <?php if ($this->is('index')): ?><link rel="canonical" href="<?php $this->options->siteUrl(); ?>">
