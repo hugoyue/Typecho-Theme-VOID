@@ -117,6 +117,15 @@ $setting = $GLOBALS['VOIDSetting'];
             } else {
                 console.log('Service workers are not supported in the current browser.');
             }
+            // SW刷新判断，避免无限刷新
+            let refreshing = false
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+              if (refreshing) {
+                return
+              }
+              refreshing = true;
+              window.location.reload();
+            });   
         </script>
         <?php else: ?>
         <script>

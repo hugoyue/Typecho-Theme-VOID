@@ -37,7 +37,7 @@ if (isset($_POST['void_action'])) {
         $description = Helper::options()->description;
     }
     ?>
-    <title><?php Contents::title($this); ?></title>
+    <title><?php Contents::title($this); ?><?php if ($this->is('index')): ?><?php if (!empty($setting['subtitle'])): ?><?php echo ' - '.$setting['subtitle']; ?><?php endif; ?><?php endif; ?></title>
     <meta name="author" content="<?php $this->author(); ?>" />
     <meta name="description" content="<?php if($description != '') echo $description; else $this->excerpt(50); ?>" />
     <meta property="og:title" content="<?php Contents::title($this); ?>" />

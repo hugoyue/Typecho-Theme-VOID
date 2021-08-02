@@ -311,6 +311,8 @@ class Utils
         $advanceSetting = array(
             'nav' => '',
             'name' => '',
+	    'subtitle' => '',
+            'RelatedPosts' => true,
             'brandFont' => array(
                 'src' => '',
                 'style' => 'normal',

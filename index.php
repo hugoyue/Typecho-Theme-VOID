@@ -20,7 +20,7 @@ if(!Utils::isPjax()){
 
 <main id="pjax-container">
     <title hidden>
-        <?php Contents::title($this); ?>
+    <?php Contents::title($this); ?><?php if ($this->is('index')): ?><?php if (!empty($setting['subtitle'])): ?><?php echo ' - '.$setting['subtitle']; ?><?php endif; ?><?php endif; ?>
     </title>
 
     <?php $this->need('includes/ldjson.php'); ?>

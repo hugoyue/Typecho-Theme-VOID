@@ -30,6 +30,18 @@ $setting = $GLOBALS['VOIDSetting'];
 
                     <div class="articleBody" class="full">
                         <?php $this->content(); ?>
+                        <?php if($setting['RelatedPosts']): ?>
+                                <!-- 相关推荐 -->
+                                <?php $this->related(6)->to($relatedPosts); ?>
+                                    <?php if ($relatedPosts->have()): ?>
+                                    <hr>
+                                    <h2 id="recommend">相关推荐</h2>
+                                    <ul><?php while ($relatedPosts->next()): ?>
+                                        <li><a href="<?php $relatedPosts->permalink(); ?>" title="<?php $relatedPosts->title(); ?>"><?php $relatedPosts->title(); ?></a></li>
+                                    <?php endwhile; ?></ul>
+                                    <?php else : ?>
+                                <?php endif; ?>
+                            <?php endif; ?>
                     </div>
                     
                     <?php $tags = Contents::getTags($this->cid); if (count($tags) > 0) { 
