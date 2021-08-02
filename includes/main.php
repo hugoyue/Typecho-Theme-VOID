@@ -42,6 +42,7 @@ $setting = $GLOBALS['VOIDSetting'];
                                     <?php else : ?>
                                 <?php endif; ?>
                             <?php endif; ?>
+			<?php echo $setting['googleadpostend']; ?>
                     </div>
                     
                     <?php $tags = Contents::getTags($this->cid); if (count($tags) > 0) { 

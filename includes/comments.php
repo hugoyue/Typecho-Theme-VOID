@@ -86,6 +86,7 @@ $this->widget('VOID_Widget_Comments_Archive', $parameter)->to($comments);
                 <?php endif;?>
             </div>
         </h3>
+	<?php echo $setting['googleadcomment']; ?>
         <?php if ($comments->have()): ?>
             <?php $comments->listComments(array(
             'before'        =>  '<div class="comment-list">',
