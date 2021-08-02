@@ -57,6 +57,12 @@ if (isset($_POST['void_action'])) {
     <?php } ?>
     <?php $this->header('commentReply=&description=&'); ?>
 
+    <!--canonical-->
+    <?php if ($this->is('index')): ?><link rel="canonical" href="<?php $this->options->siteUrl(); ?>">
+    <?php endif; ?>
+    <?php if($this->is('post') || $this->is('page')): ?><link rel="canonical" href="<?php $this->permalink(); ?>">
+    <?php endif; ?>
+
     <!--CSS-->
     <link rel="stylesheet" href="<?php Utils::indexTheme('/assets/bundle.css');?>">
     <link rel="stylesheet" href="<?php Utils::indexTheme('/assets/VOID.css');?>">
