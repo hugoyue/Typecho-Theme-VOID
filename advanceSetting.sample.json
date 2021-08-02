@@ -7,6 +7,9 @@
     // 自定义左上角显示的站点名
     "name" : "A Panda.",
 
+    // 自定义首页副标题
+    "subtitle" : "",
+
     // 为站点标题设置自定义字体，
     "brandFont": {
         "src": " ",  //填写字体文件链接，例如 "https://my.com/font.ttf"
