@@ -8,7 +8,7 @@
 
 修改的初衷在于让这款优秀的主题更符合个人的使用需求。如果你刚好也需要其中的修改项，可以通过 nightly 分支下载食用。
 
-<details><summary>## 原版特性 </summary><br>
+<details><summary>**原版特性** </summary><br>
 
 > 介绍文章：[VOID：现在可以公开的情报](https://blog.imalan.cn/archives/247/)。
 
