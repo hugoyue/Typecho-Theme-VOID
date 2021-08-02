@@ -79,7 +79,7 @@ $this->widget('VOID_Widget_Comments_Archive', $parameter)->to($comments);
             <div class="comment-tab-current">
                 <?php if($this->allow('comment')): ?>
                     <span class="comment-num">
-                        <?php $this->commentsNum('评论列表', '已有 1 条评论', '已有 <span class="num">%d</span> 条评论'); ?>
+                        <?php $this->commentsNum('', '已有 1 条评论', '已有 <span class="num">%d</span> 条评论'); ?>
                     </span>
                 <?php else :?>
                     <span class="comment-num">此处评论已关闭</span>
