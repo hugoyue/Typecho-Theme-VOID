@@ -40,6 +40,7 @@ if (isset($_POST['void_action'])) {
     <title><?php Contents::title($this); ?><?php if ($this->is('index')): ?><?php if (!empty($setting['subtitle'])): ?><?php echo ' - '.$setting['subtitle']; ?><?php endif; ?><?php endif; ?></title>
     <meta name="author" content="<?php $this->author(); ?>" />
     <meta name="description" content="<?php if($description != '') echo $description; else $this->excerpt(50); ?>" />
+    <?php if($this->is('post') || $this->is('page')) {?>
     <meta property="og:title" content="<?php Contents::title($this); ?>" />
     <meta property="og:description" content="<?php if($description != '') echo $description; else $this->excerpt(50); ?>" />
     <meta property="og:site_name" content="<?php Contents::title($this); ?>" />
@@ -51,7 +52,9 @@ if (isset($_POST['void_action'])) {
     <meta name="twitter:title" content="<?php Contents::title($this); ?>" />
     <meta name="twitter:description" content="<?php if($description != '') echo $description; else $this->excerpt(50); ?>" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:image" content="<?php echo $banner; ?>" />
+    <meta name="twitter:image" content="<?php echo $banner; ?>" /> <?php }
+    else {?>
+    <?php } ?>
     <?php $this->header('commentReply=&description=&'); ?>
 
     <!--CSS-->
