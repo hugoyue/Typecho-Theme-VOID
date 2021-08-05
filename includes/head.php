@@ -17,7 +17,12 @@ if (isset($_POST['void_action'])) {
     }
 }
 
-$assetsUrl = (isset($setting['assetsCDN'])) ? $setting['assetsCDN'] : $this->options->themeUrl.'/assets';
+if (!empty($setting['assetsCDN'])) {
+    $assetsUrl = $setting['assetsCDN'];
+}
+else {
+    $assetsUrl = $this->options->themeUrl.'/assets';
+}
 ?>
 <!DOCTYPE HTML>
 <html>
