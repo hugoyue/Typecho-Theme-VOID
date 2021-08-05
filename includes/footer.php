@@ -179,5 +179,9 @@ $assetsUrl = (isset($setting['assetsCDN'])) ? $setting['assetsCDN'] : $this->opt
         </script>
         <?php endif; ?>
         <?php $this->footer(); ?>
+	<?php if($setting['instantpage']): ?>
+	<!-- instant.page v5.1.0 -->
+        <script src="<?php echo $assetsUrl.'/instantpage.js'; ?>" type="module" defer integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+	<?php endif; ?>
     </body>
 </html>

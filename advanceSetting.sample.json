@@ -13,6 +13,9 @@
     // 启用相关文章推荐
     "RelatedPosts": true,
 
+    // instantpage 页面预加载
+    "instantpage": true
+
     // 为站点标题设置自定义字体，
     "brandFont": {
         "src": " ",  //填写字体文件链接，例如 "https://my.com/font.ttf"
