@@ -102,7 +102,7 @@ function themeConfig($form)
             }
         }
     }
-    echo '<form action="?VOIDbackup" method="post"><input type="submit" name="type" class="btn btn-s" value="备份主题设置" />&nbsp;&nbsp;<input type="submit" name="type" class="btn btn-s" value="恢复主题设置" />&nbsp;&nbsp;<input type="submit" name="type" class="btn btn-s" value="删除设置备份" /></form><br><br>';
+    echo '<form action="?VOIDbackup" method="post"><input type="submit" name="type" class="btn btn-s" value="备份主题设置" />&nbsp;&nbsp;<input type="submit" name="type" class="btn btn-s" value="恢复主题设置" />&nbsp;&nbsp;<input type="submit" name="type" class="btn btn-s" value="删除设置备份" /></form><br>';
 
     $defaultBanner = new Typecho_Widget_Helper_Form_Element_Text('defaultBanner', null, '', '首页顶部大图', '可以填写随机图 API。');
     $form->addInput($defaultBanner);
