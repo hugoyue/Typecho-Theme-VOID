@@ -318,6 +318,7 @@ class Utils
             'name' => '',
 	    'subtitle' => '',
             'RelatedPosts' => true,
+            'instantpage' => true,
             'brandFont' => array(
                 'src' => '',
                 'style' => 'normal',
