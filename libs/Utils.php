@@ -292,6 +292,7 @@ class Utils
             'indexBannerTitle' => '',
             'indexBannerSubtitle' => '',
             'serviceworker' => '',
+	    'assetsCDN' => '',
             'colorScheme' => 0, // 0: 自动，1: 日间，2: 夜间
             'reward' => ''
         );
