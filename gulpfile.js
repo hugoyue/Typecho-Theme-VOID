@@ -94,6 +94,8 @@ gulp.task('move', function () {
         './README.md',
         './screenshot.png',
         './advanceSetting.sample.json',
+	'./assets/default.jpg',
+	'./assets/offline.html',
         './change-log.md'])
         .pipe(gulp.dest('./build/'));
 });
