@@ -14,7 +14,7 @@
     "RelatedPosts": true,
 
     // instantpage 页面预加载
-    "instantpage": true
+    "instantpage": true,
 
     // 为站点标题设置自定义字体，
     "brandFont": {
