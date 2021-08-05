@@ -19,7 +19,7 @@ $assetsUrl = (isset($setting['assetsCDN'])) ? $setting['assetsCDN'] : $this->opt
                     <p>感谢陪伴：<span id="uptime"></span></p>
                 </section>
                 <section>
-                    <p>Powered by <a href="http://typecho.org/">Typecho</a> • <a href="https://blog.imalan.cn/archives/247/">Theme VOID</a></p>
+                    <p>Powered by <a href="http://typecho.org/" rel="nofollow">Typecho</a> • <a href="https://blog.imalan.cn/archives/247/" rel="nofollow">Theme VOID</a></p>
                     <p><?php echo $setting['footer']; ?></p>
                 </section>
             </div>
