@@ -202,10 +202,11 @@ gulp build
 
 ## 更新日志
 
-**2021-08-04**
+**2021-08-05**
 
 - Add:离线访问支持
 - 预留广告位
+- 自定义CDN [cfd4a89](https://github.com/monsterxcn/Typecho-Theme-VOID/commit/3cd4029a7a46184747872f41507e6d70cd3e9430) 
 
 **2021-08-02｜新增功能**
 
