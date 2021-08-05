@@ -9,6 +9,13 @@
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $setting = $GLOBALS['VOIDSetting'];
+
+if (isset($setting['assetsCDN'])) {
+    $assetsUrl = $setting['assetsCDN'];
+}
+else {
+    $assetsUrl = $this->options->themeUrl.'/assets';
+}
 ?>
         <footer>
             <div class="container wide">
@@ -139,18 +146,18 @@ $setting = $GLOBALS['VOIDSetting'];
         }
         </script>
         <?php endif; ?>
-        <script data-manual src="<?php Utils::indexTheme('/assets/bundle-b514182550.js'); ?>"></script>
+        <script data-manual src="<?php echo $assetsUrl.'/bundle-b514182550.js'; ?>"></script>
         <?php if($setting['enableMath']): ?>
-        <script src='<?php Utils::indexTheme('/assets/libs/mathjax/2.7.4/MathJax.js'); ?>'></script>
+        <script src='<?php echo $assetsUrl.'/libs/mathjax/2.7.4/MathJax.js'; ?>'></script>
         <?php endif; ?>
-        <script src="<?php Utils::indexTheme('/assets/VOID-e344978213.js'); ?>"></script>
+        <script src="<?php echo $assetsUrl.'/VOID-e344978213.js'; ?>"></script>
         <script>
         if($(".OwO").length > 0){
             new OwO({
                 logo: 'OωO',
                 container: document.getElementsByClassName('OwO')[0],
                 target: document.getElementsByClassName('input-area')[0],
-                api: '<?php Utils::indexTheme('/assets/libs/owo/OwO_03.json'); ?>',
+                api: '<?php echo $assetsUrl.'/libs/owo/OwO_03.json'; ?>',
                 position: 'down',
                 width: '400px',
                 maxHeight: '250px'

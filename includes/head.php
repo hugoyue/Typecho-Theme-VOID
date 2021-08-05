@@ -16,6 +16,13 @@ if (isset($_POST['void_action'])) {
         exit;
     }
 }
+
+if (isset($setting['assetsCDN'])) {
+    $assetsUrl = $setting['assetsCDN'];
+}
+else {
+    $assetsUrl = $this->options->themeUrl.'/assets';
+}
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -64,11 +71,11 @@ if (isset($_POST['void_action'])) {
     <?php endif; ?>
 
     <!--CSS-->
-    <link rel="stylesheet" href="<?php Utils::indexTheme('/assets/bundle-1e9bf597b1.css');?>">
-    <link rel="stylesheet" href="<?php Utils::indexTheme('/assets/VOID-c07295eada.css');?>">
+    <link rel="stylesheet" href="<?php echo $assetsUrl.'/bundle-1e9bf597b1.css'; ?>">
+    <link rel="stylesheet" href="<?php echo $assetsUrl.'/VOID-c07295eada.css'; ?>">
 
     <!--JS-->
-    <script src="<?php Utils::indexTheme('/assets/bundle-header-9977c8fbf5.js'); ?>"></script>
+    <script src="<?php echo $assetsUrl.'/bundle-header-9977c8fbf5.js'; ?>"></script>
     <script>
     VOIDConfig = {
         PJAX : <?php echo $setting['pjax'] ? 'true' : 'false'; ?>,
@@ -96,8 +103,8 @@ if (isset($_POST['void_action'])) {
         isDev: true
     }
     </script>
-    <script src="<?php Utils::indexTheme('/assets/header-dba1d6f214.js'); ?>"></script>
-    
+    <script src="<?php echo $assetsUrl.'/header-dba1d6f214.js'; ?>"></script>
+
     <?php echo $setting['head']; ?>
     <style>
         <?php if(!empty($setting['desktopBannerHeight'])): ?>
