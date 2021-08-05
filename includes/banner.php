@@ -84,7 +84,7 @@ if($this->is('post') || $this->is('page')) {
             if($setting['indexBannerSubtitle']!='') $subtitle = $setting['indexBannerSubtitle'];
         ?>
         <div class="banner-title index<?php if(!empty($banner)) echo ' force-normal'; ?>">
-            <h1 class="post-title"><span class="brand"><span><?php echo $title; ?></span></span><br><span class="subtitle"><?php echo $subtitle; ?></span></h1>
+            <h1 class="post-title"><span class="brand"><span><?php echo $title; ?></span></span><br><span class="subtitle brand"><?php echo $subtitle; ?></span></h1>
         </div>
     <?php endif; ?>
 </div>
