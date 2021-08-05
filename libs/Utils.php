@@ -292,7 +292,7 @@ class Utils
             'indexBannerTitle' => '',
             'indexBannerSubtitle' => '',
             'serviceworker' => '',
-	    'assetsCDN' => '',
+	    'assetsCDN' => 'https://github.com/hugoyue/Typecho-Theme-VOID/tree/nightly/assets',
             'colorScheme' => 0, // 0: 自动，1: 日间，2: 夜间
             'reward' => ''
         );
