@@ -10,12 +10,7 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $setting = $GLOBALS['VOIDSetting'];
 
-if (isset($setting['assetsCDN'])) {
-    $assetsUrl = $setting['assetsCDN'];
-}
-else {
-    $assetsUrl = $this->options->themeUrl.'/assets';
-}
+$assetsUrl = (isset($setting['assetsCDN'])) ? $setting['assetsCDN'] : $this->options->themeUrl.'/assets';
 ?>
         <footer>
             <div class="container wide">
