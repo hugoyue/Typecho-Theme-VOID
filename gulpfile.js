@@ -86,7 +86,7 @@ gulp.task('md5', function () {
 gulp.task('move', function () {
     gulp.src(['./assets/libs/owo/**/*', './assets/libs/mathjax/**/*'], { base: './assets/libs/' })
         .pipe(gulp.dest('./build/assets/libs/'));
-    gulp.src(['./assets/sw-toolbox.js', './assets/VOIDCacheRule.js', './assets/instantpage.js'])
+    gulp.src(['./assets/sw-toolbox.js', './assets/VOIDCacheRule.js', './assets/VOIDCacheRuleDefault.js', './assets/instantpage.js', './assets/default.jpg', './assets/offline.html'])
         .pipe(gulp.dest('./build/assets/'));
     gulp.src(['./assets/fonts/*'])
         .pipe(gulp.dest('./build/assets/fonts/'));
@@ -94,8 +94,6 @@ gulp.task('move', function () {
         './README.md',
         './screenshot.png',
         './advanceSetting.sample.json',
-	'./assets/default.jpg',
-	'./assets/offline.html',
         './change-log.md'])
         .pipe(gulp.dest('./build/'));
 });
