@@ -104,22 +104,22 @@ $setting = $GLOBALS['VOIDSetting'];
                 <div class="post-pager"><?php $prev = Contents::thePrev($this); $next = Contents::theNext($this); ?>
                     <?php if($prev): ?>
                         <div class="prev">
-                            <a href="<?php $prev->permalink(); ?>"><h2><?php $prev->title(); ?></h2></a>
+                            <a href="<?php $prev->permalink(); ?>"<div class="pretitle"><?php $prev->title(); ?></div></a>
                             <?php echo $prev->fields->excerpt != '' ? "<p>{$prev->fields->excerpt}</p>" : ''; ?>
                         </div>
                     <?php else: ?>
                         <div class="prev">
-                            <h2>没有了</h2>
+                            <div class="pretitle">没有了</div>
                         </div>
                     <?php endif; ?>
                     <?php if($next): ?>
                         <div class="next">
-                            <a href="<?php $next->permalink(); ?>"><h2><?php $next->title(); ?></h2></a>
+                            <a href="<?php $next->permalink(); ?>"><div class="pretitle"><?php $next->title(); ?></div></a>
                             <?php echo $next->fields->excerpt != '' ? "<p>{$next->fields->excerpt}</p>" : ''; ?>
                         </div>
                     <?php else: ?>
                         <div class="next">
-                            <h2>没有了</h2>
+                            <div class="pretitle">没有了</div>
                         </div>
                     <?php endif; ?>
                 </div>
