@@ -28,7 +28,7 @@ $this->widget('VOID_Widget_Comments_Archive', $parameter)->to($comments);
                 <div class="cancel-comment-reply" role=button>
                     <?php $comments->cancelReply(); ?>
                 </div>
-                <h3 id="response" class="widget-title text-left">添加新评论</h3>
+                <div id="response" class="widget-title text-left commtitle">添加新评论</div>
                 <?php if(!empty($setting['commentNotification'])): ?>
                     <p class="comment-notification notice"><?php echo $setting['commentNotification']; ?></p>
                 <?php endif; ?>
@@ -75,7 +75,7 @@ $this->widget('VOID_Widget_Comments_Archive', $parameter)->to($comments);
         <?php endif; ?>
         
         <!--历史评论-->
-        <h3 class="comment-separator">
+        <div class="comment-separator commtitle">
             <div class="comment-tab-current">
                 <?php if($this->allow('comment')): ?>
                     <span class="comment-num">
@@ -85,7 +85,7 @@ $this->widget('VOID_Widget_Comments_Archive', $parameter)->to($comments);
                     <span class="comment-num">此处评论已关闭</span>
                 <?php endif;?>
             </div>
-        </h3>
+        </div>
 	<?php echo $setting['googleadcomment']; ?>
         <?php if ($comments->have()): ?>
             <?php $comments->listComments(array(
