@@ -104,7 +104,7 @@ $setting = $GLOBALS['VOIDSetting'];
                 <div class="post-pager"><?php $prev = Contents::thePrev($this); $next = Contents::theNext($this); ?>
                     <?php if($prev): ?>
                         <div class="prev">
-                            <a href="<?php $prev->permalink(); ?>"<div class="pretitle"><?php $prev->title(); ?></div></a>
+                            <a href="<?php $prev->permalink(); ?>" class="pretitle"><?php $prev->title(); ?></a>
                             <?php echo $prev->fields->excerpt != '' ? "<p>{$prev->fields->excerpt}</p>" : ''; ?>
                         </div>
                     <?php else: ?>
@@ -114,7 +114,7 @@ $setting = $GLOBALS['VOIDSetting'];
                     <?php endif; ?>
                     <?php if($next): ?>
                         <div class="next">
-                            <a href="<?php $next->permalink(); ?>"><div class="pretitle"><?php $next->title(); ?></div></a>
+                            <a href="<?php $next->permalink(); ?>" class="pretitle"><?php $next->title(); ?></a>
                             <?php echo $next->fields->excerpt != '' ? "<p>{$next->fields->excerpt}</p>" : ''; ?>
                         </div>
                     <?php else: ?>
