@@ -72,7 +72,7 @@ else {
 
     <!--CSS-->
     <link rel="stylesheet" href="<?php echo $assetsUrl.'/bundle-1e9bf597b1.css'; ?>">
-    <link rel="stylesheet" href="<?php echo $assetsUrl.'/VOID-f0a753d26d.css'; ?>">
+    <link rel="stylesheet" href="<?php echo $assetsUrl.'/VOID-6dc4afaf6a.css'; ?>">
 
     <!--JS-->
     <script src="<?php echo $assetsUrl.'/bundle-header-9977c8fbf5.js'; ?>"></script>
