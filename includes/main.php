@@ -43,6 +43,16 @@ $setting = $GLOBALS['VOIDSetting'];
                                 <?php endif; ?>
                             <?php endif; ?>
 			<?php echo $setting['googleadpostend']; ?>
+			<?php if($setting['copyright']): ?>
+				<!-- 版权信息 -->
+				<?php if($this->is('post')): ?>
+					<blockquote>
+					<p>文章作者：<a href="<?php $this->options->siteUrl(); ?>"><?php echo $this->options->title; ?></a></p>
+					<p>原文地址：<a href="<?php $this->permalink() ?>"><?php $this->permalink() ?></a></p>
+					<p>版权声明：本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。非商业转载及引用请注明出处（作者、原文链接），商业转载请联系作者获得授权。</p>
+					</blockquote>
+				<?php endif; ?>
+			<?php endif; ?>
                     </div>
                     
                     <?php $tags = Contents::getTags($this->cid); if (count($tags) > 0) { 
