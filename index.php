@@ -84,7 +84,7 @@ if(!Utils::isPjax()){
                                 <?php if($this->fields->showfullcontent == '1'): ?>
                                     <a href="<?php $this->permalink(); ?>">
                                 <?php endif; ?>
-                                <h1 class="title"><?php $this->title(); ?></h1>
+                                <h2 class="title"><?php $this->title(); ?></h2>
                                 <?php if($this->fields->showfullcontent == '1'): ?>
                                     </a>
                                 <?php endif; ?>
