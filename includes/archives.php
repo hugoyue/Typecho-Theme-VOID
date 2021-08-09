@@ -53,7 +53,7 @@ $setting = $GLOBALS['VOIDSetting'];
                                     <?php endif; ?>
                                 </div>
 
-                                <h1 class="title"><?php $this->title(); ?></h1>
+                                <h2 class="title"><?php $this->title(); ?></h2>
                                 <?php if($this->fields->excerpt != ''): ?> 
                                     <p class="headline single"><?php echo $this->fields->excerpt; ?></p>
                                 <?php else: ?>
