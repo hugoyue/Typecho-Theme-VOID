@@ -316,9 +316,10 @@ class Utils
         $advanceSetting = array(
             'nav' => '',
             'name' => '',
-	    'subtitle' => '',
+            'subtitle' => '',
             'RelatedPosts' => true,
             'instantpage' => false,
+            'copyright' => true,
             'brandFont' => array(
                 'src' => '',
                 'style' => 'normal',
