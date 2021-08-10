@@ -1,4 +1,4 @@
-# Typecho Theme VOID 3.5.1
+# Typecho Theme VOID 修改版
 
 > ✏ 一款简洁优雅的 Typecho 主题
 
@@ -202,22 +202,16 @@ gulp build
 
 ## 更新日志
 
-**2021-08-05**
+### 更新内容
 
-- Add:离线访问支持
-- 预留广告位
-- 自定义CDN [cfd4a89](https://github.com/monsterxcn/Typecho-Theme-VOID/commit/3cd4029a7a46184747872f41507e6d70cd3e9430) 
-
-**2021-08-02｜新增功能**
-
-- 默认摘要为80字
-- 删除多余meta标签
-- 首页、文章页、独立页面增加canonical标签
-- 社交标签只限于文章页和独立页面
-- 备份主题设置（引用自[monsterxcn](https://github.com/monsterxcn/Typecho-Theme-VOID/commit/fa5c88517f06eae461af7f5212b6cc8877022bd9)，感谢..）
-- 增加相关文章推荐
-- 增加首页副标题
-- 无评论不显示评论列表
+- 新增：文章列表、页面预留广告位
+- 新增：支持自定义CDN 替代主题静态资源，引用 [cfd4a89](https://github.com/monsterxcn/Typecho-Theme-VOID/commit/3cd4029a7a46184747872f41507e6d70cd3e9430)
+- 新增：支持主题备份设置
+- 新增：支持自定义首页副标题
+- 新增：文章页面相关推荐
+- 新增：文章页面支持展示版权信息
+- 新增：支持 instantpage.js 页面预加载
+- 以及一系列基于SEO的相关优化~
 
 从 2.2 版本起，主题部分功能需要配套插件支持，例如文章点赞、浏览量统计、字数统计等。**请先卸载**原来的 Likes、TePostViews 插件，否则数据会出现错误！TePostViews 插件卸载前请设置为**卸载后保留数据**，以防丢失浏览数据。
 
