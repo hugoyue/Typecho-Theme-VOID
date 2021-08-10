@@ -29,6 +29,15 @@
     }
   });
 
+  // 缓存托管 jsdelivr CDN 中的静态资源
+   self.toolbox.router.get('/gh/hugoyue/Typecho-Theme-VOID@nightly/assets/(.*)', self.toolbox.cacheFirst, {
+     origin: /(cdn\.jsdelivr\.net)/,
+     cache: {
+       name: staticVendorCacheName,
+       maxEntries: maxEntries
+     }
+   });
+
   // 缓存 Gravatar 头像
   self.toolbox.router.get('/avatar/(.*)', self.toolbox.cacheFirst, {
     origin: /(secure\.gravatar\.com)/,
