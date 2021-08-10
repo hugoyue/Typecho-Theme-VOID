@@ -317,9 +317,9 @@ class Utils
             'nav' => '',
             'name' => '',
             'subtitle' => '',
-            'RelatedPosts' => true,
+            'RelatedPosts' => false,
             'instantpage' => false,
-            'copyright' => true,
+            'copyright' => false,
             'brandFont' => array(
                 'src' => '',
                 'style' => 'normal',
