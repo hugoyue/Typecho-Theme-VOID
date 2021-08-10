@@ -140,10 +140,10 @@
 .yue blockquote {
     margin: 1.6em 0;
     border-left: 4px solid #ff5268;
-    padding-left: 0.92rem;
-    color: $fadeColor;
+    color: rgba(0,0,0,.6);
+    padding: .5rem;
+    padding-left: .75rem;
     background: rgba(0,0,25,.025);
-    padding: .5rem 0 .5rem .75rem;
     .theme-dark & {
         color: $td-textColor-dark;
         background: rgba(230,230,255,.03);
