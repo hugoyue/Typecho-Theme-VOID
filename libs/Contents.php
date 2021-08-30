@@ -68,7 +68,7 @@ Class Contents
         $archive->archiveTitle(array(
             'category'  =>  '%s_专题下的文章',
             'search'    =>  '%s_相关文章',
-            'tag'       =>  '%s_标签下的文章',
+            'tag'       =>  '%s',
             'author'    =>  '%s_发布的文章'
         ), '', ' - ');
         Helper::options()->title();
