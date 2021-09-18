@@ -188,5 +188,44 @@ else {
 	<!-- instant.page v5.1.0 -->
         <script src="<?php echo $assetsUrl.'/instantpage.js'; ?>" type="module" defer integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 	<?php endif; ?>
+	<?php if($setting['f12disable']): ?>
+		<script>
+			((function() {
+				var callbacks = [],
+					timeLimit = 50,
+					open = false;
+				setInterval(loop, 1);
+				return {
+					addListener: function(fn) {
+						callbacks.push(fn);
+					},
+					cancleListenr: function(fn) {
+						callbacks = callbacks.filter(function(v) {
+							return v !== fn;
+						});
+					}
+				}
+				function loop() {
+					var startTime = new Date();
+					debugger;
+					if (new Date() - startTime > timeLimit) {
+						if (!open) {
+							callbacks.forEach(function(fn) {
+								fn.call(null);
+							});
+						}
+						open = true;
+						window.stop();
+						alert('不要扒我了');
+						window.location.reload();
+					} else {
+						open = false;
+					}
+				}
+			})()).addListener(function() {
+				window.location.reload();
+			});
+		</script>
+	<?php endif; ?>
     </body>
 </html>
