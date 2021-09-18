@@ -320,6 +320,7 @@ class Utils
             'RelatedPosts' => false,
             'instantpage' => false,
             'copyright' => false,
+            'f12disable' => false,
             'brandFont' => array(
                 'src' => '',
                 'style' => 'normal',

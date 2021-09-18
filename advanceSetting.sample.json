@@ -19,6 +19,9 @@
     // 显示版权信息
     "copyright": true,
 
+    // 防扒代码
+    "f12disable": false,
+
     // 为站点标题设置自定义字体，
     "brandFont": {
         "src": " ",  //填写字体文件链接，例如 "https://my.com/font.ttf"
