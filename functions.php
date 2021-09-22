@@ -144,7 +144,7 @@ function themeConfig($form)
     $form->addInput($pjax);
     $pjaxreload = new Typecho_Widget_Helper_Form_Element_Textarea('pjaxreload', null, null, 'PJAX 重载函数', '输入要重载的 JS，如果你发现站点有点不对劲，又不知道这个选项是啥意思，请关闭 PJAX 并留空此项。');
     $form->addInput($pjaxreload);
-    $serviceworker = new Typecho_Widget_Helper_Form_Element_Text('serviceworker', null, null, '自定义 Service Worker', '若不知道该选项含义，请留空此项。<br><b>离线缓存模式：</b>将主题 assets 文件夹下的 VOIDCacheRule.js 复制一份到站点根目录，在此填写文件名 VOIDCacheRuleDefault.js。<br><b>离线访问模式：</b>PJAX 可能存在冲突建议关闭，将主题 assets 文件夹下的 VOIDCacheRule.js、default.jpg、offline.html 文件复制到站点根目录，并在此填写文件名 VOIDCacheRule.js。');
+    $serviceworker = new Typecho_Widget_Helper_Form_Element_Text('serviceworker', null, null, '自定义 Service Worker', '若不知道该选项含义，请留空此项。<br><b>离线缓存模式：</b>将主题 assets 文件夹下的 VOIDCacheRuleDefault.js 复制一份到站点根目录，在此填写文件名 VOIDCacheRuleDefault.js。<br><b>离线访问模式：</b>PJAX 可能存在冲突建议关闭，将主题 assets 文件夹下的 VOIDCacheRule.js、default.jpg、offline.html 文件复制到站点根目录，并在此填写文件名 VOIDCacheRule.js。');
     $form->addInput($serviceworker);
     $assetsCDN = new Typecho_Widget_Helper_Form_Element_Text('assetsCDN', null, null, '自定义 CDN', '使用 CDN 来加速主题 assets 目录下的静态资源，这里填写 CDN 地址（填写 assets 目录地址，如：https://cdn.jsdelivr.net/gh/hugoyue/Typecho-Theme-VOID@nightly/assets）。若不知道该选项含义，请留空。');
     $form->addInput($assetsCDN);
