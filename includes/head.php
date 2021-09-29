@@ -44,7 +44,7 @@ else {
         $description = Helper::options()->description;
     }
     ?>
-    <title><?php Contents::title($this); ?><?php if ($this->is('index')): ?><?php if (!empty($setting['subtitle'])): ?><?php echo ' - '.$setting['subtitle']; ?><?php endif; ?><?php endif; ?></title>
+    <title><?php if($this->_currentPage>1) echo '第'.$this->_currentPage.'页'.' - '; ?><?php Contents::title($this); ?><?php if ($this->is('index')): ?><?php if (!empty($setting['subtitle'])): ?><?php echo ' - '.$setting['subtitle']; ?><?php endif; ?><?php endif; ?></title>
     <meta name="author" content="<?php $this->author(); ?>" />
     <meta name="description" content="<?php if($description != '') echo $description; else $this->excerpt(80); ?>" />
     <?php $this->header('commentReply=&description=&wlw=&xmlrpc=&rss2=&atom=&rss1=&template=&pingback=&generator'); ?>

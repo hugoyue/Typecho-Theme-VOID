@@ -20,7 +20,7 @@ if(!Utils::isPjax()){
 
 <main id="pjax-container">
     <title hidden>
-    <?php Contents::title($this); ?><?php if ($this->is('index')): ?><?php if (!empty($setting['subtitle'])): ?><?php echo ' - '.$setting['subtitle']; ?><?php endif; ?><?php endif; ?>
+    <?php if($this->_currentPage>1) echo '第'.$this->_currentPage.'页'.' - '; ?><?php Contents::title($this); ?><?php if ($this->is('index')): ?><?php if (!empty($setting['subtitle'])): ?><?php echo ' - '.$setting['subtitle']; ?><?php endif; ?><?php endif; ?>
     </title>
 
     <?php $this->need('includes/ldjson.php'); ?>
