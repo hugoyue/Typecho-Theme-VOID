@@ -32,6 +32,9 @@ else {
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
     <?php 
     $banner = '';
     $description = '';
@@ -71,7 +74,7 @@ else {
     <?php endif; ?>
 
     <!--CSS-->
-    <link rel="stylesheet" href="<?php echo $assetsUrl.'/bundle-7cb7c58834.css'; ?>">
+    <link rel="stylesheet" href="<?php echo $assetsUrl.'/bundle-1e9bf597b1.css'; ?>">
     <link rel="stylesheet" href="<?php echo $assetsUrl.'/VOID-68501dc259.css'; ?>">
 
     <!--JS-->
