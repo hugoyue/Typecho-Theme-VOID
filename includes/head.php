@@ -77,10 +77,10 @@ else {
 
     <!--CSS-->
     <link rel="stylesheet" href="<?php echo $assetsUrl.'/bundle-1e9bf597b1.css'; ?>">
-    <link rel="stylesheet" href="<?php echo $assetsUrl.'/VOID-68501dc259.css'; ?>">
+    <link rel="stylesheet" href="<?php echo $assetsUrl.'/VOID-a39bb95374.css'; ?>">
 
     <!--JS-->
-    <script src="<?php echo $assetsUrl.'/bundle-header-9977c8fbf5.js'; ?>"></script>
+    <script src="<?php echo $assetsUrl.'/bundle-header-b69228a59f.js'; ?>"></script>
     <script>
     VOIDConfig = {
         PJAX : <?php echo $setting['pjax'] ? 'true' : 'false'; ?>,
@@ -92,6 +92,7 @@ else {
         colorScheme:  <?php echo $setting['colorScheme']; ?>,
         headerMode: <?php echo $setting['headerMode']; ?>,
         followSystemColorScheme: <?php echo $setting['followSystemColorScheme'] ? 'true' : 'false'; ?>,
+        browserLevelLoadingLazy: <?php echo $setting['browserLevelLoadingLazy'] ? 'true' : 'false'; ?>,
         VOIDPlugin: <?php echo $setting['VOIDPlugin'] ? 'true' : 'false'; ?>,
         votePath: "<?php Utils::index('/action/void?'); ?>",
         lightBg: "",
@@ -108,7 +109,7 @@ else {
         isDev: true
     }
     </script>
-    <script src="<?php echo $assetsUrl.'/header-dba1d6f214.js'; ?>"></script>
+    <script src="<?php echo $assetsUrl.'/header-fd3209d155.js'; ?>"></script>
 
     <?php echo $setting['head']; ?>
     <style>
