@@ -325,7 +325,13 @@ Class Contents
             $attrAddOnA .= ' class="lazyload-container" ';
         }
 
-        $img = $placeholder.'<img class="'.$classList.'" alt="'.$match[2].'" data-src="'.$src_ori.'" src="'.$src.'">';
+        // 使用浏览器原生的懒加载方法
+        if (!self::$photoMode && Helper::options()->lazyload == '1' && $setting['browserLevelLoadingLazy']) {
+            $classList .= ' browserlevel-lazy';
+            $img = '<img class="'.$classList.'" alt="'.$match[2].'" src="'.$src_ori.'" loading="lazy">';
+        } else {
+            $img = $placeholder.'<img class="'.$classList.'" alt="'.$match[2].'" data-src="'.$src_ori.'" src="'.$src.'">';
+        }
 
         if (!self::$photoMode) {
             return '<figure '.$attrAddOnFigure.' ><a '.$attrAddOnA.' no-pjax data-fancybox="gallery" data-caption="'.$match[2].'" href="'.$src_ori.'">'.$img.'</a>'.$figcaption.'</figure>';

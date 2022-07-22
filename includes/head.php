@@ -92,6 +92,7 @@ else {
         colorScheme:  <?php echo $setting['colorScheme']; ?>,
         headerMode: <?php echo $setting['headerMode']; ?>,
         followSystemColorScheme: <?php echo $setting['followSystemColorScheme'] ? 'true' : 'false'; ?>,
+        browserLevelLoadingLazy: <?php echo $setting['browserLevelLoadingLazy'] ? 'true' : 'false'; ?>,
         VOIDPlugin: <?php echo $setting['VOIDPlugin'] ? 'true' : 'false'; ?>,
         votePath: "<?php Utils::index('/action/void?'); ?>",
         lightBg: "",
