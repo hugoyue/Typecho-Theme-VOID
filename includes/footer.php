@@ -146,11 +146,11 @@ else {
         }
         </script>
         <?php endif; ?>
-        <script data-manual src="<?php echo $assetsUrl.'/bundle-a8b0b5e159.js'; ?>"></script>
+        <script data-manual src="<?php echo $assetsUrl.'/bundle-06b08fd53e.js'; ?>"></script>
         <?php if($setting['enableMath']): ?>
         <script src='<?php echo $assetsUrl.'/libs/mathjax/2.7.4/MathJax.js'; ?>'></script>
         <?php endif; ?>
-        <script src="<?php echo $assetsUrl.'/VOID-80b84c7780.js'; ?>"></script>
+        <script src="<?php echo $assetsUrl.'/VOID-8326cedebe.js'; ?>"></script>
         <script>
         if($(".OwO").length > 0){
             new OwO({

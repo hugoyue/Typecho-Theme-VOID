@@ -60,6 +60,8 @@ else {
     <meta property="og:image" content="<?php echo $banner; ?>" />
     <meta property="article:published_time" content="<?php echo date('c', $this->created); ?>" />
     <meta property="article:modified_time" content="<?php echo date('c', $this->modified); ?>" />
+    <meta property="bytedance:published_time" content="<?php echo date('c', $this->created); ?>" />
+    <meta property="bytedance:updated_time" content="<?php echo date('c', $this->modified); ?>" />
     <meta name="twitter:title" content="<?php Contents::title($this); ?>" />
     <meta name="twitter:description" content="<?php if($description != '') echo $description; else $this->excerpt(50); ?>" />
     <meta name="twitter:card" content="summary" />
@@ -80,7 +82,7 @@ else {
     <link rel="stylesheet" href="<?php echo $assetsUrl.'/VOID-a39bb95374.css'; ?>">
 
     <!--JS-->
-    <script src="<?php echo $assetsUrl.'/bundle-header-b69228a59f.js'; ?>"></script>
+    <script src="<?php echo $assetsUrl.'/bundle-header-ded5281476.js'; ?>"></script>
     <script>
     VOIDConfig = {
         PJAX : <?php echo $setting['pjax'] ? 'true' : 'false'; ?>,
@@ -109,7 +111,7 @@ else {
         isDev: true
     }
     </script>
-    <script src="<?php echo $assetsUrl.'/header-fd3209d155.js'; ?>"></script>
+    <script src="<?php echo $assetsUrl.'/header-c6259ac830.js'; ?>"></script>
 
     <?php echo $setting['head']; ?>
     <style>
