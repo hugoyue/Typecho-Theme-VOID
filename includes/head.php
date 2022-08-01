@@ -54,12 +54,14 @@ else {
     <?php if($this->is('post') || $this->is('page')) {?>
     <meta property="og:title" content="<?php Contents::title($this); ?>" />
     <meta property="og:description" content="<?php if($description != '') echo $description; else $this->excerpt(80); ?>" />
-    <meta property="og:site_name" content="<?php Contents::title($this); ?>" />
+    <meta property="og:site_name" content="<?php $this->options->title(); ?>" />
     <meta property="og:type" content="<?php if($this->is('post') || $this->is('page')) echo 'article'; else echo 'website'; ?>" />
     <meta property="og:url" content="<?php $this->permalink(); ?>" />
     <meta property="og:image" content="<?php echo $banner; ?>" />
     <meta property="article:published_time" content="<?php echo date('c', $this->created); ?>" />
     <meta property="article:modified_time" content="<?php echo date('c', $this->modified); ?>" />
+    <meta property="bytedance:published_time" content="<?php echo date('c', $this->created); ?>" />
+    <meta property="bytedance:updated_time" content="<?php echo date('c', $this->modified); ?>" />
     <meta name="twitter:title" content="<?php Contents::title($this); ?>" />
     <meta name="twitter:description" content="<?php if($description != '') echo $description; else $this->excerpt(50); ?>" />
     <meta name="twitter:card" content="summary" />
