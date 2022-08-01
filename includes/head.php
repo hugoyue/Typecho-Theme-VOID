@@ -60,8 +60,6 @@ else {
     <meta property="og:image" content="<?php echo $banner; ?>" />
     <meta property="article:published_time" content="<?php echo date('c', $this->created); ?>" />
     <meta property="article:modified_time" content="<?php echo date('c', $this->modified); ?>" />
-    <meta property="bytedance:published_time" content="<?php echo date('c', $this->created); ?>" />
-    <meta property="bytedance:updated_time" content="<?php echo date('c', $this->modified); ?>" />
     <meta name="twitter:title" content="<?php Contents::title($this); ?>" />
     <meta name="twitter:description" content="<?php if($description != '') echo $description; else $this->excerpt(50); ?>" />
     <meta name="twitter:card" content="summary" />
