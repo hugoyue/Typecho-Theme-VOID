@@ -22,10 +22,10 @@ $setting = $GLOBALS['VOIDSetting'];
     <div class="wrapper container <?php if($setting['indexStyle'] == 1) echo 'narrow'; else echo 'wide'; ?>">
         <section id="index-list" class="float-up">
             <h1 hidden class="post-title"><?php $this->archiveTitle(array(
-                'category'  =>  _t('分类 "%s" 下的文章'),
-                'search'    =>  _t('包含关键字 "%s" 的文章'),
-                'tag'       =>  _t('包含标签 "%s" 的文章'),
-                'author'    =>  _t('"%s" 发布的文章')
+                'category'  =>  _t('%s - 专题文章'),
+                'search'    =>  _t('包含 "%s" 的搜索结果'),
+                'tag'       =>  _t('%s - 相关文章'),
+                'author'    =>  _t('%s 发布的文章')
             ), '', '');  ?></h1>
             <ul id="masonry">
                 <?php $counter=0; ?>
