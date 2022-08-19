@@ -146,7 +146,7 @@ else {
         }
         </script>
         <?php endif; ?>
-        <script data-manual src="<?php echo $assetsUrl.'/bundle-06b08fd53e.js'; ?>"></script>
+        <script data-manual src="<?php echo $assetsUrl.'/bundle-91b30321a1.js'; ?>"></script>
         <?php if($setting['enableMath']): ?>
         <script src='<?php echo $assetsUrl.'/libs/mathjax/2.7.4/MathJax.js'; ?>'></script>
         <?php endif; ?>

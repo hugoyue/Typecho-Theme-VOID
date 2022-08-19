@@ -82,7 +82,7 @@ else {
     <link rel="stylesheet" href="<?php echo $assetsUrl.'/VOID-a39bb95374.css'; ?>">
 
     <!--JS-->
-    <script src="<?php echo $assetsUrl.'/bundle-header-ded5281476.js'; ?>"></script>
+    <script src="<?php echo $assetsUrl.'/bundle-header-d906a6f2ed.js'; ?>"></script>
     <script>
     VOIDConfig = {
         PJAX : <?php echo $setting['pjax'] ? 'true' : 'false'; ?>,
