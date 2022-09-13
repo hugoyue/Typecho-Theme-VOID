@@ -46,11 +46,16 @@
 
 ## 使用说明
 
-1. 下载主题：[开发版](https://github.com/hugoyue/Typecho-Theme-VOID/archive/refs/heads/nightly.zip)，并解压，并将文件夹命名为 `VOID`
-3. 将**主题文件夹下**的 VOID 文件夹上传至站点 /usr/themes 目录下
-4. 后台启用主题
-5. 下载[VOID 配套插件](https://github.com/AlanDecode/VOID-Plugin/archive/refs/heads/master.zip) 解压，文件夹重新命名为 `VOID`，将文件夹上传至站点 `/usr/plugins` 目录下
-6. 后台启用插件
+cd 到网站根目录，执行下面命令：
+
+```
+# Clone VOID 主题
+git clone -b nightly https://github.com/hugoyue/Typecho-Theme-VOID.git usr/themes/VOID
+
+# Clone 主题自带插件
+git clone https://github.com/AlanDecode/VOID-Plugin.git usr/plugins/VOID
+```
+然后在后台启用主题、启用插件。
 
 * 可选：将主题 `assets` 文件夹下的 `VOIDCacheRule.js` 复制一份到站点根目录，并在主题设置中启用 Service Worker 缓存。
 * 可选：主题文件夹下 advanceSetting.sample.json 中有一些高级设置，可以看看。
