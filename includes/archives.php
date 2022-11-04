@@ -28,17 +28,7 @@ $setting = $GLOBALS['VOIDSetting'];
                 'author'    =>  _t('%s 发布的文章')
             ), '', '');  ?></h1>
             <ul id="masonry">
-                <?php $counter=0; ?>
-                <?php while($this->next()): ?>
-                <?php $counter++; ?>
-                <?php if($counter==4) :?>
-                <?php echo $setting['googleadindexlist1']; ?>
-                <div style="margin-bottom: 30px;"></div>
-                <?php elseif($counter==7) :?>
-                <?php echo $setting['googleadindexlist2']; ?>
-                <div style="margin-bottom: 30px;"></div>
-                <?php else: ?>
-                <?php endif; ?>
+            <?php while($this->next()): ?>
                 <?php $bannerAsCover = $this->fields->bannerascover; if($this->fields->banner == '') $bannerAsCover='0'; ?>
                 <li id="p-<?php $this->cid(); ?>"  class="masonry-item style-<?php echo $bannerAsCover; ?>">
                     <a href="<?php $this->permalink(); ?>">    
