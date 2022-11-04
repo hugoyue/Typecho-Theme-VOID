@@ -132,14 +132,6 @@ function themeConfig($form)
     $form->addInput($head);
     $footer = new Typecho_Widget_Helper_Form_Element_Textarea('footer', null, '', 'footer 标签输出内容', '备案号等。');
     $form->addInput($footer);
-    $googleadindexlist1 = new Typecho_Widget_Helper_Form_Element_Textarea('googleadindexlist1', null, '', '广告区域1 首页文章列表第4条', '请使用谷歌单元广告。');
-    $form->addInput($googleadindexlist1);
-    $googleadindexlist2 = new Typecho_Widget_Helper_Form_Element_Textarea('googleadindexlist2', null, '', '广告区域2 首页文章列表第8条', '请使用谷歌单元广告。');
-    $form->addInput($googleadindexlist2);
-    $googleadpostend = new Typecho_Widget_Helper_Form_Element_Textarea('googleadpostend', null, '', '广告区域3 文章结尾', '请使用谷歌单元广告。');
-    $form->addInput($googleadpostend);
-    $googleadcomment = new Typecho_Widget_Helper_Form_Element_Textarea('googleadcomment', null, '', '广告区域4 评论列表第1条', '请使用谷歌单元广告。');
-    $form->addInput($googleadcomment);
     $pjax = new Typecho_Widget_Helper_Form_Element_Radio('pjax', array('0' => '不启用', '1' => '启用'), '0', '启用 PJAX (BETA)', '是否启用 PJAX。如果你发现站点有点不对劲，又不知道这个选项是啥意思，请关闭此项。');
     $form->addInput($pjax);
     $pjaxreload = new Typecho_Widget_Helper_Form_Element_Textarea('pjaxreload', null, null, 'PJAX 重载函数', '输入要重载的 JS，如果你发现站点有点不对劲，又不知道这个选项是啥意思，请关闭 PJAX 并留空此项。');
