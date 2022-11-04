@@ -29,7 +29,17 @@ if(!Utils::isPjax()){
     <div class="wrapper container <?php if($setting['indexStyle'] == 1) echo 'narrow'; else echo 'wide'; ?>">
         <section id="index-list" class="float-up">
             <ul id="masonry">
-            <?php while($this->next()): ?>
+		<?php $counter=0; ?>
+                <?php while($this->next()): ?>
+                <?php $counter++; ?>
+                <?php if($counter==4) :?>
+                <?php echo $setting['googleadindexlist1']; ?>
+                <div style="margin-bottom: 30px;"></div>
+                <?php elseif($counter==7) :?>
+                <?php echo $setting['googleadindexlist2']; ?>
+                <div style="margin-bottom: 30px;"></div>
+                <?php else: ?>
+                <?php endif; ?>
                 <?php $bannerAsCover = $this->fields->bannerascover; if($this->fields->banner == '') $bannerAsCover='0'; ?>
                 <li id="p-<?php $this->cid(); ?>" class="masonry-item style-<?php 
                         if($this->fields->showfullcontent=='1') {

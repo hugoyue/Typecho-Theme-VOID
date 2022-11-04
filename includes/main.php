@@ -42,6 +42,7 @@ $setting = $GLOBALS['VOIDSetting'];
                                     <?php else : ?>
                                 <?php endif; ?>
                             <?php endif; ?>
+			<?php echo $setting['googleadpostend']; ?>
 			<?php if($setting['copyright']): ?>
 				<!-- 版权信息 -->
 				<?php if($this->is('post')): ?>
