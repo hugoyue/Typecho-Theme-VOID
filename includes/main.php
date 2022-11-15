@@ -36,9 +36,9 @@ $setting = $GLOBALS['VOIDSetting'];
                                     <?php if ($relatedPosts->have()): ?>
                                     <hr>
                                     <h2 id="recommend">相关推荐</h2>
-                                    <ul><?php while ($relatedPosts->next()): ?>
+                                    <ol><?php while ($relatedPosts->next()): ?>
                                         <li><a href="<?php $relatedPosts->permalink(); ?>" title="<?php $relatedPosts->title(); ?>"><?php $relatedPosts->title(); ?></a></li>
-                                    <?php endwhile; ?></ul>
+                                    <?php endwhile; ?></ol>
                                     <?php else : ?>
                                 <?php endif; ?>
                             <?php endif; ?>
