@@ -110,7 +110,7 @@ $setting = $GLOBALS['VOIDSetting'];
 
                 <!--分页-->
                 <?php if(!$this->is('page')): ?>
-                <div class="post-pager"><?php $prev = Contents::thePrev($this); $next = Contents::theNext($this); ?>
+                <div class="post-pager"><?php $prev = Contents::thePrev($this); ?>
                     <?php if($prev): ?>
                         <div class="prev">
                             <a href="<?php $prev->permalink(); ?>" class="pretitle"><?php $prev->title(); ?></a>
@@ -121,6 +121,7 @@ $setting = $GLOBALS['VOIDSetting'];
                             <div class="pretitle">没有了</div>
                         </div>
                     <?php endif; ?>
+                    <?php $next = Contents::theNext($this); ?>
                     <?php if($next): ?>
                         <div class="next">
                             <a href="<?php $next->permalink(); ?>" class="pretitle"><?php $next->title(); ?></a>
